@@ -11,6 +11,20 @@ defaultAxios.interceptors.response.use(
   }
 );
 
+export const getLatest = ({
+  data = {},
+  headers = {},
+  params = {},
+  path = {},
+} = {}) => {
+  return defaultAxios({
+    url: `https://dev.to/api/articles/latest`,
+    method: "get",
+    params: { per_page: "3", ...params },
+    headers,
+    data,
+  });
+};
 export const getPublications = ({
   data = {},
   headers = {},

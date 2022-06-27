@@ -16,16 +16,16 @@ import {
 const BlogPage = () => {
   const navigate = useNavigate();
 
-  function handleNavigate8() {
+  function handleNavigate9() {
     navigate("/");
   }
-  function handleNavigate9() {
+  function handleNavigate10() {
     navigate("/podcasts");
   }
-  function handleNavigate10() {
+  function handleNavigate11() {
     navigate("/blogpost1");
   }
-  function handleNavigate11() {
+  function handleNavigate12() {
     navigate("/contactus");
   }
 
@@ -40,20 +40,20 @@ const BlogPage = () => {
                 <Row className="items-center justify-between w-[100%]">
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate8}
+                    onClick={handleNavigate9}
                   >{`Home`}</Text>
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate9}
+                    onClick={handleNavigate10}
                   >{`Podcast`}</Text>
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate10}
+                    onClick={handleNavigate11}
                   >{`Blog`}</Text>
                   <Text className="cursor-pointer hover:font-bold font-bold lg:ml-[23px] xl:ml-[26px] ml-[30px] 3xl:ml-[36px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]">{`About`}</Text>
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate11}
+                    onClick={handleNavigate12}
                   >{`Contact`}</Text>
                 </Row>
               </Column>
@@ -75,14 +75,11 @@ const BlogPage = () => {
             />
             <div className="absolute bg-gray_900 bottom-[7%] lg:h-[286px] xl:h-[327px] h-[367px] 2xl:h-[368px] 3xl:h-[441px] inset-x-[0] mx-[auto] rounded-radius25 w-[83%]"></div>
             <Row className="absolute bottom-[0] inset-x-[0] items-center justify-start mx-[auto] w-[74%]">
-              <Stack className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] lg:w-[54px] xl:w-[62px] w-[70px] 3xl:w-[84px]">
-                <Image
-                  src={"images/img_ellipse5_3.png"}
-                  className="absolute lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] inset-[0] object-cover rounded-radius501 w-[auto]"
-                  alt="Ellipse5"
-                />
-                <div className="absolute bg-pink_300 lg:h-[11px] xl:h-[13px] h-[14px] 2xl:h-[15px] 3xl:h-[17px] right-[6%] rounded-radius501 top-[6%] lg:w-[10px] xl:w-[12px] w-[14px] 3xl:w-[16px]"></div>
-              </Stack>
+              <Image
+                src={"images/img_ellipse5_3.png"}
+                className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] object-contain rounded-radius501 w-[auto]"
+                alt="Ellipse5"
+              />
               <Column className="items-start mb-[10px] 3xl:mb-[12px] lg:mb-[7px] xl:mb-[8px] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[11px] 3xl:mt-[13px] lg:mt-[8px] xl:mt-[9px] w-[22%]">
                 <Column className="w-[100%]">
                   <Text className="font-semibold mx-[auto] lg:text-[18px] xl:text-[21px] text-[24px] 3xl:text-[28px] text-bluegray_300 text-center w-[auto]">{`By Jhone Leonardo`}</Text>
@@ -97,7 +94,7 @@ const BlogPage = () => {
                 />
                 <Input
                   className="placeholder:bg-transparent bg-transparent border border-pink_300 border-solid font-medium pb-[18.82px] 3xl:pl-[105px] lg:pl-[68px] xl:pl-[78px] pl-[88.06px] 2xl:pl-[88px] lg:pr-[23px] xl:pr-[26px] pr-[29.94px] 2xl:pr-[29px] 3xl:pr-[35px] pt-[18.86px] lg:py-[14px] xl:py-[16px] 2xl:py-[18px] 3xl:py-[22px] rounded-radius5 lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] placeholder:text-pink_300 text-pink_300 text-right w-[100%]"
-                  name="Group21"
+                  name="Group13"
                   placeholder={`Share Now`}
                 ></Input>
               </div>
@@ -118,8 +115,9 @@ const BlogPage = () => {
             <Text className="font-bold font-merriweather italic leading-[normal] lg:mt-[21px] xl:mt-[24px] mt-[28px] 3xl:mt-[33px] lg:text-[37px] xl:text-[42px] text-[48px] 3xl:text-[57px] text-left text-white_A700 tracking-ls1 w-[100%]">{`How to write a book properly and correctly by paying attention to various parts to support the story`}</Text>
           </Column>
         </Stack>
-        <Column className="items-start lg:mt-[62px] xl:mt-[71px] mt-[80px] 3xl:mt-[96px] lg:px-[178px] xl:px-[204px] px-[230px] 3xl:px-[276px] w-[100%]">
-          <Text className="font-light font-publicsans lg:leading-[27px] xl:leading-[31px] leading-[35.00px] 2xl:leading-[35px] 3xl:leading-[42px] ml-[1px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-left w-[68%]">{`Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf. Could someone survive inside a transporter buffer for 75 years? Fate. It protects fools, little children, and ships named “Enterprise.”`}</Text>
+        <Column className="items-start lg:mt-[38px] xl:mt-[44px] mt-[50px] 3xl:mt-[60px] lg:px-[178px] xl:px-[204px] px-[230px] 3xl:px-[276px] w-[100%]">
+          <Text className="font-light font-publicsans ml-[1px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_300 text-center w-[auto]">{`https://google.com`}</Text>
+          <Text className="font-light font-publicsans lg:leading-[27px] xl:leading-[31px] leading-[35.00px] 2xl:leading-[35px] 3xl:leading-[42px] ml-[1px] lg:mt-[10px] xl:mt-[12px] mt-[14px] 3xl:mt-[16px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-left w-[68%]">{`Did you come here for something in particular or just general Riker-bashing? And blowing into maximum warp speed, you appeared for an instant to be in two places at once. We have a saboteur aboard. We know you’re dealing in stolen ore. But I wanna talk about the assassination attempt on Lieutenant Worf. Could someone survive inside a transporter buffer for 75 years? Fate. It protects fools, little children, and ships named “Enterprise.”`}</Text>
           <Text className="font-light font-publicsans lg:leading-[27px] xl:leading-[31px] leading-[35.00px] 2xl:leading-[35px] 3xl:leading-[42px] lg:mt-[30px] xl:mt-[34px] mt-[39px] 3xl:mt-[46px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-left w-[68%]">
             <span className="text-bluegray_300">
               <>{`The game’s not big enough unless it scares you a little. Wait a minute – you’ve been declared dead. You can’t give `}</>
@@ -174,14 +172,11 @@ const BlogPage = () => {
           </Row>
         </Column>
         <Row className="font-publicsans items-center justify-center lg:ml-[447px] xl:ml-[511px] ml-[575px] 3xl:ml-[690px] lg:mt-[53px] xl:mt-[61px] mt-[69px] 3xl:mt-[82px] w-[16%]">
-          <Stack className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]">
-            <Image
-              src={"images/img_ellipse5_4.png"}
-              className="absolute lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] inset-[0] object-cover rounded-radius501 w-[auto]"
-              alt="Ellipse5"
-            />
-            <div className="absolute bg-pink_300 lg:h-[11px] xl:h-[13px] h-[14px] 2xl:h-[15px] 3xl:h-[17px] right-[0] rounded-radius501 top-[12%] lg:w-[10px] xl:w-[12px] w-[14px] 3xl:w-[16px]"></div>
-          </Stack>
+          <Image
+            src={"images/img_ellipse5_4.png"}
+            className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] object-contain rounded-radius501 w-[auto]"
+            alt="Ellipse5"
+          />
           <Column className="items-start lg:ml-[11px] xl:ml-[13px] ml-[15px] 3xl:ml-[18px] 3xl:my-[10px] lg:my-[7px] xl:my-[8px] my-[9px] w-[68%]">
             <Column className="w-[100%]">
               <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[auto]">{`By Jhone Leonardo`}</Text>

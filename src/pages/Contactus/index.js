@@ -15,13 +15,13 @@ import {
 const ContactusPage = () => {
   const navigate = useNavigate();
 
-  function handleNavigate1() {
+  function handleNavigate2() {
     navigate("/podcasts");
   }
-  function handleNavigate2() {
+  function handleNavigate3() {
     navigate("/blogpost1");
   }
-  function handleNavigate12() {
+  function handleNavigate13() {
     navigate("/");
   }
 
@@ -36,15 +36,15 @@ const ContactusPage = () => {
                 <Row className="items-center justify-between w-[100%]">
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate12}
+                    onClick={handleNavigate13}
                   >{`Home`}</Text>
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate1}
+                    onClick={handleNavigate2}
                   >{`Podcast`}</Text>
                   <Text
                     className="common-pointer cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]"
-                    onClick={handleNavigate2}
+                    onClick={handleNavigate3}
                   >{`Blog`}</Text>
                   <Text className="cursor-pointer hover:font-bold font-bold lg:ml-[23px] xl:ml-[26px] ml-[30px] 3xl:ml-[36px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]">{`About`}</Text>
                   <Text className="cursor-pointer hover:font-bold font-bold lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-bluegray_300 text-center hover:text-deep_purple_A200 tracking-ls1 w-[auto]">{`Contact`}</Text>
@@ -91,7 +91,7 @@ const ContactusPage = () => {
               </Row>
             </Column>
           </Column>
-          <Column className="bg-gray_901 lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:pb-[15px] xl:pb-[17px] pb-[20px] 3xl:pb-[24px] lg:pt-[33px] xl:pt-[38px] pt-[43px] 3xl:pt-[51px] rounded-radius10 shadow-bs4 w-[53%]">
+          <Column className="bg-gray_901 lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] lg:pb-[15px] xl:pb-[17px] pb-[20px] 3xl:pb-[24px] lg:pt-[33px] xl:pt-[38px] pt-[43px] 3xl:pt-[51px] rounded-radius10 shadow-bs2 w-[53%]">
             <Row className="lg:gap-[19px] xl:gap-[22px] gap-[25px] 3xl:gap-[30px] grid grid-cols-2 items-center justify-evenly w-[100%]">
               <Input
                 className="placeholder:bg-transparent bg-transparent border border-gray_300 border-solid font-light lg:pl-[19px] xl:pl-[22px] pl-[25px] 3xl:pl-[30px] lg:py-[17px] xl:py-[20px] py-[23.06px] 2xl:py-[23px] 3xl:py-[27px] rounded-radius5 lg:text-[18px] xl:text-[21px] text-[24px] 3xl:text-[28px] placeholder:text-gray_400 text-gray_400 text-left w-[100%]"

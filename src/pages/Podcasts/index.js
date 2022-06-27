@@ -49,14 +49,11 @@ const PodcastsPage = () => {
                 <Button className="bg-white_A700_3f font-light font-publicsans xl:py-[5px] lg:py-[5px] py-[6.54px] 2xl:py-[6px] 3xl:py-[7px] rounded-radius5 lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[13%]">{`Writer`}</Button>
                 <Text className="font-bold font-merriweather italic leading-[normal] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] lg:text-[28px] xl:text-[32px] text-[36px] 3xl:text-[43px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Eps 3 : How to write a book properly and correctly by paying attention to various parts to support the story`}</Text>
                 <Row className="font-publicsans items-center justify-start lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] w-[37%]">
-                  <Stack className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] lg:w-[46px] xl:w-[53px] w-[60px] 3xl:w-[72px]">
-                    <Image
-                      src={"images/img_ellipse5_5.png"}
-                      className="absolute lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] inset-[0] object-cover rounded-radius501 w-[auto]"
-                      alt="Ellipse5"
-                    />
-                    <div className="absolute bg-pink_300 lg:h-[11px] xl:h-[13px] h-[14px] 2xl:h-[15px] 3xl:h-[17px] right-[0] rounded-radius501 top-[12%] lg:w-[10px] xl:w-[12px] w-[14px] 3xl:w-[16px]"></div>
-                  </Stack>
+                  <Image
+                    src={"images/img_ellipse5_5.png"}
+                    className="lg:h-[47px] xl:h-[54px] h-[60px] 2xl:h-[61px] 3xl:h-[73px] object-contain rounded-radius501 w-[auto]"
+                    alt="Ellipse5"
+                  />
                   <Column className="items-start lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] 3xl:my-[10px] lg:my-[7px] xl:my-[8px] my-[9px] w-[68%]">
                     <Column className="w-[100%]">
                       <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 tracking-ls1 w-[auto]">{`By Jhone Leonardo`}</Text>
@@ -76,7 +73,7 @@ const PodcastsPage = () => {
                 </Column>
               </Column>
             </Row>
-            <Row className="absolute bg-white_A700 bottom-[0] inset-x-[0] items-center justify-center mx-[auto] lg:pb-[16px] xl:pb-[18px] pb-[21px] 3xl:pb-[25px] lg:pl-[20px] xl:pl-[23px] pl-[26px] 3xl:pl-[31px] lg:pr-[17px] xl:pr-[19px] pr-[22px] 3xl:pr-[26px] lg:pt-[22px] xl:pt-[25px] pt-[29px] 3xl:pt-[34px] rounded-radius5 shadow-bs5 w-[64%]">
+            <Row className="absolute bg-white_A700 bottom-[0] inset-x-[0] items-center justify-center mx-[auto] lg:pb-[16px] xl:pb-[18px] pb-[21px] 3xl:pb-[25px] lg:pl-[20px] xl:pl-[23px] pl-[26px] 3xl:pl-[31px] lg:pr-[17px] xl:pr-[19px] pr-[22px] 3xl:pr-[26px] lg:pt-[22px] xl:pt-[25px] pt-[29px] 3xl:pt-[34px] rounded-radius5 shadow-bs3 w-[64%]">
               <Image
                 src={"images/img_rectangle39.png"}
                 className="lg:h-[168px] xl:h-[192px] h-[215px] 2xl:h-[216px] 3xl:h-[259px] object-contain rounded-radius5 w-[23%]"
@@ -110,7 +107,7 @@ const PodcastsPage = () => {
         </Column>
         <Row className="font-merriweather items-center justify-start lg:ml-[129px] xl:ml-[148px] ml-[167px] 3xl:ml-[200px] mt-[100px] 3xl:mt-[120px] lg:mt-[77px] xl:mt-[88px] w-[30%]">
           <Image
-            src={"images/img_logo_1.svg"}
+            src={"images/img_logo.svg"}
             className="lg:h-[60px] xl:h-[68px] h-[76px] 2xl:h-[77px] 3xl:h-[92px] my-[1px] object-contain lg:w-[59px] xl:w-[67px] w-[76px] 3xl:w-[91px]"
             alt="logo"
           />
@@ -123,11 +120,11 @@ const PodcastsPage = () => {
         </Row>
         <Column className="items-center lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:px-[129px] xl:px-[148px] px-[167px] 3xl:px-[200px] w-[100%]">
           <Grid className="lg:gap-[17px] xl:gap-[19px] gap-[22px] 3xl:gap-[26px] grid grid-cols-4 mx-[auto] w-[77%]">
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_4.png"}
+                    src={"images/img_rectangle9.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -141,11 +138,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_5.png"}
+                    src={"images/img_rectangle9_1.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -159,11 +156,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_6.png"}
+                    src={"images/img_rectangle9_2.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -177,11 +174,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_7.png"}
+                    src={"images/img_rectangle9_3.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -195,11 +192,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_8.png"}
+                    src={"images/img_rectangle9_4.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -213,11 +210,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_9.png"}
+                    src={"images/img_rectangle9_5.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -231,11 +228,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_10.png"}
+                    src={"images/img_rectangle9_6.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -249,11 +246,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_11.png"}
+                    src={"images/img_rectangle9_7.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -267,11 +264,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_12.png"}
+                    src={"images/img_rectangle9_8.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -285,11 +282,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_13.png"}
+                    src={"images/img_rectangle9_9.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -303,11 +300,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_14.png"}
+                    src={"images/img_rectangle9_10.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
@@ -321,11 +318,11 @@ const PodcastsPage = () => {
               <Text className="font-bold font-merriweather leading-[normal] lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:mt-[11px] xl:mt-[13px] mt-[15px] 3xl:mt-[18px] lg:text-[12px] xl:text-[14px] text-[16px] 3xl:text-[19px] text-indigo_900 text-left w-[90%]">{`The secrets of writing a good book`}</Text>
               <Text className="font-light font-publicsans lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_600 text-left w-[auto]">{`By LaosPodcast`}</Text>
             </Column>
-            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs1 w-[100%]">
+            <Column className="bg-white_A700 items-start justify-start lg:pb-[19px] xl:pb-[22px] pb-[25px] 3xl:pb-[30px] lg:pt-[11px] xl:pt-[13px] pt-[15px] 3xl:pt-[18px] rounded-radius5 shadow-bs4 w-[100%]">
               <Column className="items-center xl:pl-[12px] pl-[14px] 3xl:pl-[16px] xl:pr-[11px] pr-[13px] 3xl:pr-[15px] lg:px-[10px] w-[100%]">
                 <Stack className="lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] mx-[auto] w-[90%]">
                   <Image
-                    src={"images/img_rectangle9_15.png"}
+                    src={"images/img_rectangle9_11.png"}
                     className="absolute lg:h-[161px] xl:h-[185px] h-[207px] 2xl:h-[208px] 3xl:h-[249px] inset-[0] object-cover rounded-radius5 w-[100%]"
                     alt="Rectangle9"
                   />
