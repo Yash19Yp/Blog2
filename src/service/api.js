@@ -25,24 +25,6 @@ export const getLatest = ({
     data,
   });
 };
-export const getPublications = ({
-  data = {},
-  headers = {},
-  params = {},
-  path = {},
-} = {}) => {
-  return defaultAxios({
-    url: `https://api.medium.com/v1/users/10142e3c71fe4a90cd8ec59efc7654ef98673dd7b1ee02104a45c0db912a5e083/publications`,
-    method: "get",
-    params,
-    headers: {
-      Authorization:
-        "Bearer 285a1b0baf6b4b50b2a44b1a0ad6873377a327b19d01f02645e897d521d135436",
-      ...headers,
-    },
-    data,
-  });
-};
 export const getArticles = ({
   data = {},
   headers = {},

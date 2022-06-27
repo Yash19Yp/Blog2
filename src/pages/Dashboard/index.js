@@ -15,17 +15,17 @@ import { useNavigate } from "react-router-dom";
 import { getLatest } from "service/api";
 
 const DashboardPage = () => {
-  const [apiData, setapiData] = React.useState();
+  const [apiData1, setapiData1] = React.useState();
   React.useEffect(() => {
-    callApi();
+    callApi1();
   }, []);
   const navigate = useNavigate();
 
-  function callApi() {
+  function callApi1() {
     const req = { params: { per_page: "3" } };
     getLatest(req)
       .then((res) => {
-        setapiData(res);
+        setapiData1(res);
       })
       .catch((err) => {
         console.error(err);
@@ -156,7 +156,7 @@ const DashboardPage = () => {
               className="gap-[0] min-h-[auto] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] w-[100%]"
               orientation="vertical"
             >
-              {apiData?.map((apiDataEle) => {
+              {apiData1?.map((apiData1Ele) => {
                 return (
                   <List
                     className="gap-[0] min-h-[auto] my-[0] w-[100%]"
