@@ -90,39 +90,220 @@ const DashboardPage = () => {
             alt="ornamen"
           />
         </Stack>
-        <Row className="items-start justify-start lg:mt-[56px] xl:mt-[64px] mt-[72px] 3xl:mt-[86px] mx-[auto] w-[77%]">
-          <List className="gap-[0] min-h-[auto] w-[66%]" orientation="vertical">
-            {apiData?.map((apiDataEle) => {
-              return (
-                <Column className="font-publicsans items-center lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
-                  <Row className="items-center justify-start w-[100%]">
-                    <Image
-                      src={apiDataEle?.user?.profile_image}
-                      className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] object-contain lg:w-[54px] xl:w-[62px] w-[70px] 3xl:w-[84px]"
-                      alt="Ellipse5"
-                    />
-                    <Column className="items-start lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:my-[10px] xl:my-[12px] my-[14px] 3xl:my-[16px] w-[22%]">
-                      <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[auto]">
-                        {apiDataEle?.user?.name}
-                      </Text>
-                      <Text className="font-light lg:mt-[3px] xl:mt-[4px] mt-[5px] 3xl:mt-[6px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">
-                        {apiDataEle?.readable_publish_date}
-                      </Text>
-                    </Column>
-                    <Text className="font-light lg:mb-[18px] xl:mb-[21px] mb-[24px] 3xl:mb-[28px] lg:ml-[273px] xl:ml-[313px] ml-[352px] 3xl:ml-[422px] lg:mt-[17px] xl:mt-[20px] mt-[23px] 3xl:mt-[27px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_300 text-center w-[auto]">
-                      <span className="text-bluegray_300 font-publicsans">
-                        <>{`Category `}</>
-                      </span>
-                      <span className="text-pink_300 text-[18px] font-merriweather font-black lg:text-[14px] xl:text-[16px] 3xl:text-[21px]">
-                        <>{`Writing`}</>
-                      </span>
-                    </Text>
-                  </Row>
+        <Row className="items-start justify-start lg:mt-[56px] xl:mt-[64px] mt-[72px] 3xl:mt-[86px] lg:pl-[119px] xl:pl-[136px] pl-[153px] 3xl:pl-[183px] lg:pr-[137px] xl:pr-[157px] pr-[177px] 3xl:pr-[212px] w-[100%]">
+          <List className="gap-[0] min-h-[auto] w-[51%]" orientation="vertical">
+            <Column className="font-publicsans items-center lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+              <Row className="items-center justify-start w-[100%]">
+                <Image
+                  src={"images/img_ellipse5.png"}
+                  className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] object-contain lg:w-[54px] xl:w-[62px] w-[70px] 3xl:w-[84px]"
+                  alt="Ellipse5"
+                />
+                <Column className="items-start lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:my-[10px] xl:my-[12px] my-[14px] 3xl:my-[16px] w-[22%]">
+                  <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[auto]">{`By Jhone Leonardo`}</Text>
+                  <Text className="font-light lg:mt-[3px] xl:mt-[4px] mt-[5px] 3xl:mt-[6px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 September, 2020`}</Text>
                 </Column>
-              );
-            })}
+                <Text className="font-light lg:mb-[18px] xl:mb-[21px] mb-[24px] 3xl:mb-[28px] lg:ml-[273px] xl:ml-[313px] ml-[352px] 3xl:ml-[422px] lg:mt-[17px] xl:mt-[20px] mt-[23px] 3xl:mt-[27px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_300 text-center w-[auto]">
+                  <span className="text-bluegray_300 font-publicsans">
+                    <>{`Category `}</>
+                  </span>
+                  <span className="text-pink_300 text-[18px] font-merriweather font-black lg:text-[14px] xl:text-[16px] 3xl:text-[21px]">
+                    <>{`Writing`}</>
+                  </span>
+                </Text>
+              </Row>
+            </Column>
+            <Text className="font-bold font-merriweather italic leading-[normal] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] lg:text-[37px] xl:text-[42px] text-[48px] 3xl:text-[57px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Consistent way of working to train yourself`}</Text>
+            <Column className="items-center lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+              <Image
+                src={"images/img_rectangle11.png"}
+                className="lg:h-[304px] xl:h-[347px] h-[390px] 2xl:h-[391px] 3xl:h-[469px] object-contain rounded-radius5 w-[100%]"
+                alt="Rectangle11"
+              />
+            </Column>
+            <Text className="font-light font-publicsans lg:leading-[23px] xl:leading-[26px] leading-[30.00px] 2xl:leading-[30px] 3xl:leading-[36px] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 w-[100%]">{`We all know that every person has his or her own desire to work, but do you know that we can actually be consistent in making works if we want, now in this article I want to invite all of you to learn to be consistent in creating.`}</Text>
+            <Row className="font-publicsans items-center justify-start lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] w-[65%]">
+              <Image
+                src={"images/img_group29.svg"}
+                className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                alt="Group29"
+              />
+              <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`5 minutes ago`}</Text>
+              <Image
+                src={"images/img_group31.svg"}
+                className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                alt="Group31"
+              />
+              <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 Like`}</Text>
+              <Row className="items-center justify-between lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] w-[22%]">
+                <Image
+                  src={"images/img_group30.svg"}
+                  className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                  alt="Group30"
+                />
+                <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`Share`}</Text>
+              </Row>
+            </Row>
+            <div className="3xl:my-[18px] lg:my-[11px] my-[15px] w-[35%] xl:my-[13px] input-wrap">
+              <Image
+                src={"images/img_vector.svg"}
+                className="absolute z-[1] right-[29px] lg:right-[22px] lg:my-[11px] xl:right-[25px] xl:my-[13px] 3xl:right-[34px] 3xl:my-[18px] my-[15px] inset-y-[0]"
+                alt="Vector"
+              />
+              <Button className="bg-white_A700 font-bold font-publicsans lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] lg:pb-[20px] xl:pb-[23px] pb-[26.55px] 2xl:pb-[26px] 3xl:pb-[31px] lg:pl-[21px] xl:pl-[24px] pl-[28px] 3xl:pl-[33px] pr-[108px] 3xl:pr-[129px] lg:pr-[84px] xl:pr-[96px] lg:pt-[21px] xl:pt-[24px] pt-[27.55px] 2xl:pt-[27px] 3xl:pt-[33px] rounded-radius5 lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Continue Reading`}</Button>
+            </div>
+            <List
+              className="gap-[0] min-h-[auto] lg:my-[11px] xl:my-[13px] my-[15px] 3xl:my-[18px] w-[100%]"
+              orientation="vertical"
+            >
+              {apiData?.map((apiDataEle) => {
+                return (
+                  <List
+                    className="gap-[0] min-h-[auto] my-[0] w-[100%]"
+                    orientation="vertical"
+                  >
+                    <Column className="items-start justify-start lg:my-[19px] xl:my-[22px] my-[25px] 3xl:my-[30px] w-[100%]">
+                      <Column className="font-publicsans items-center xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+                        <Row className="items-center justify-start w-[100%]">
+                          <Image
+                            src={"images/img_ellipse5_1.png"}
+                            className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] object-contain rounded-radius501 w-[auto]"
+                            alt="Ellipse5"
+                          />
+                          <Column className="items-start lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:my-[10px] xl:my-[12px] my-[14px] 3xl:my-[16px] w-[22%]">
+                            <Column className="w-[100%]">
+                              <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[auto]">{`By Jhone Leonardo`}</Text>
+                            </Column>
+                            <Text className="font-light lg:mt-[3px] xl:mt-[4px] mt-[5px] 3xl:mt-[6px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 September, 2020`}</Text>
+                          </Column>
+                          <Text className="font-light lg:mb-[18px] xl:mb-[21px] mb-[24px] 3xl:mb-[28px] lg:ml-[273px] xl:ml-[313px] ml-[352px] 3xl:ml-[422px] lg:mt-[17px] xl:mt-[20px] mt-[23px] 3xl:mt-[27px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_300 text-center w-[auto]">
+                            <span className="text-bluegray_300 font-publicsans">
+                              <>{`Category `}</>
+                            </span>
+                            <span className="text-pink_300 text-[18px] font-merriweather font-black lg:text-[14px] xl:text-[16px] 3xl:text-[21px]">
+                              <>{`Writing`}</>
+                            </span>
+                          </Text>
+                        </Row>
+                      </Column>
+                      <Text className="font-bold font-merriweather italic leading-[normal] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] lg:text-[37px] xl:text-[42px] text-[48px] 3xl:text-[57px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Consistent way of working to train yourself`}</Text>
+                      <Column className="items-center lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+                        <Image
+                          src={"images/img_rectangle11_1.png"}
+                          className="lg:h-[304px] xl:h-[347px] h-[390px] 2xl:h-[391px] 3xl:h-[469px] object-contain rounded-radius5 w-[100%]"
+                          alt="Rectangle11"
+                        />
+                      </Column>
+                      <Text className="font-light font-publicsans lg:leading-[23px] xl:leading-[26px] leading-[30.00px] 2xl:leading-[30px] 3xl:leading-[36px] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 w-[100%]">{`We all know that every person has his or her own desire to work, but do you know that we can actually be consistent in making works if we want, now in this article I want to invite all of you to learn to be consistent in creating.`}</Text>
+                      <Row className="font-publicsans items-center justify-start lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] w-[65%]">
+                        <Row className="items-center justify-start w-[33%]">
+                          <Image
+                            src={"images/img_group29_1.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group29"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`5 minutes ago`}</Text>
+                        </Row>
+                        <Row className="items-center justify-center lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] w-[23%]">
+                          <Image
+                            src={"images/img_group31_1.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group31"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 Like`}</Text>
+                        </Row>
+                        <Row className="items-center justify-between lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] w-[22%]">
+                          <Image
+                            src={"images/img_group30_1.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group30"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`Share`}</Text>
+                        </Row>
+                      </Row>
+                      <div className="3xl:mt-[24px] lg:mt-[15px] mt-[20px] w-[35%] xl:mt-[17px] input-wrap">
+                        <Image
+                          src={"images/img_vector_1.svg"}
+                          className="absolute z-[1] right-[29px] lg:right-[22px] xl:right-[25px] 3xl:right-[34px] my-[auto] inset-y-[0]"
+                          alt="Vector"
+                        />
+                        <Button className="bg-white_A700 font-bold font-publicsans lg:pb-[20px] xl:pb-[23px] pb-[26.55px] 2xl:pb-[26px] 3xl:pb-[31px] lg:pl-[21px] xl:pl-[24px] pl-[28px] 3xl:pl-[33px] pr-[108px] 3xl:pr-[129px] lg:pr-[84px] xl:pr-[96px] lg:pt-[21px] xl:pt-[24px] pt-[27.55px] 2xl:pt-[27px] 3xl:pt-[33px] rounded-radius5 lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Continue Reading`}</Button>
+                      </div>
+                    </Column>
+                    <Column className="items-start justify-start lg:my-[19px] xl:my-[22px] my-[25px] 3xl:my-[30px] w-[100%]">
+                      <Column className="font-publicsans items-center xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+                        <Row className="items-center justify-start w-[100%]">
+                          <Image
+                            src={"images/img_ellipse5_2.png"}
+                            className="lg:h-[55px] xl:h-[63px] h-[70px] 2xl:h-[71px] 3xl:h-[85px] object-contain rounded-radius501 w-[auto]"
+                            alt="Ellipse5"
+                          />
+                          <Column className="items-start lg:ml-[10px] xl:ml-[12px] ml-[14px] 3xl:ml-[16px] lg:my-[10px] xl:my-[12px] my-[14px] 3xl:my-[16px] w-[22%]">
+                            <Column className="w-[100%]">
+                              <Text className="font-semibold mx-[auto] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-center text-white_A700 w-[auto]">{`By Jhone Leonardo`}</Text>
+                            </Column>
+                            <Text className="font-light lg:mt-[3px] xl:mt-[4px] mt-[5px] 3xl:mt-[6px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 September, 2020`}</Text>
+                          </Column>
+                          <Text className="font-light lg:mb-[18px] xl:mb-[21px] mb-[24px] 3xl:mb-[28px] lg:ml-[273px] xl:ml-[313px] ml-[352px] 3xl:ml-[422px] lg:mt-[17px] xl:mt-[20px] mt-[23px] 3xl:mt-[27px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-bluegray_300 text-center w-[auto]">
+                            <span className="text-bluegray_300 font-publicsans">
+                              <>{`Category `}</>
+                            </span>
+                            <span className="text-pink_300 text-[18px] font-merriweather font-black lg:text-[14px] xl:text-[16px] 3xl:text-[21px]">
+                              <>{`Writing`}</>
+                            </span>
+                          </Text>
+                        </Row>
+                      </Column>
+                      <Text className="font-bold font-merriweather italic leading-[normal] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] lg:text-[37px] xl:text-[42px] text-[48px] 3xl:text-[57px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Consistent way of working to train yourself`}</Text>
+                      <Column className="items-center lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] xl:pl-[1px] lg:pl-[1px] pl-[2px] w-[100%]">
+                        <Image
+                          src={"images/img_rectangle11_2.png"}
+                          className="lg:h-[304px] xl:h-[347px] h-[390px] 2xl:h-[391px] 3xl:h-[469px] object-contain rounded-radius5 w-[100%]"
+                          alt="Rectangle11"
+                        />
+                      </Column>
+                      <Text className="font-light font-publicsans lg:leading-[23px] xl:leading-[26px] leading-[30.00px] 2xl:leading-[30px] 3xl:leading-[36px] lg:mt-[23px] xl:mt-[26px] mt-[30px] 3xl:mt-[36px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 w-[100%]">{`We all know that every person has his or her own desire to work, but do you know that we can actually be consistent in making works if we want, now in this article I want to invite all of you to learn to be consistent in creating.`}</Text>
+                      <Row className="font-publicsans items-center justify-start lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] w-[65%]">
+                        <Row className="items-center justify-start w-[33%]">
+                          <Image
+                            src={"images/img_group29_2.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group29"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`5 minutes ago`}</Text>
+                        </Row>
+                        <Row className="items-center justify-center lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] w-[23%]">
+                          <Image
+                            src={"images/img_group31_2.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group31"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`12 Like`}</Text>
+                        </Row>
+                        <Row className="items-center justify-between lg:ml-[38px] xl:ml-[44px] ml-[50px] 3xl:ml-[60px] w-[22%]">
+                          <Image
+                            src={"images/img_group30_2.svg"}
+                            className="lg:h-[43px] xl:h-[49px] h-[55px] 2xl:h-[56px] 3xl:h-[67px] object-contain lg:w-[42px] xl:w-[48px] w-[55px] 3xl:w-[66px]"
+                            alt="Group30"
+                          />
+                          <Text className="font-light lg:mb-[14px] xl:mb-[16px] mb-[19px] 3xl:mb-[22px] ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] lg:mt-[15px] xl:mt-[17px] mt-[20px] 3xl:mt-[24px] lg:text-[10px] xl:text-[12px] text-[14px] 3xl:text-[16px] text-center text-white_A700 w-[auto]">{`Share`}</Text>
+                        </Row>
+                      </Row>
+                      <div className="3xl:mt-[24px] lg:mt-[15px] mt-[20px] w-[35%] xl:mt-[17px] input-wrap">
+                        <Image
+                          src={"images/img_vector_2.svg"}
+                          className="absolute z-[1] right-[29px] lg:right-[22px] xl:right-[25px] 3xl:right-[34px] my-[auto] inset-y-[0]"
+                          alt="Vector"
+                        />
+                        <Button className="bg-white_A700 font-bold font-publicsans lg:pb-[20px] xl:pb-[23px] pb-[26.55px] 2xl:pb-[26px] 3xl:pb-[31px] lg:pl-[21px] xl:pl-[24px] pl-[28px] 3xl:pl-[33px] pr-[108px] 3xl:pr-[129px] lg:pr-[84px] xl:pr-[96px] lg:pt-[21px] xl:pt-[24px] pt-[27.55px] 2xl:pt-[27px] 3xl:pt-[33px] rounded-radius5 lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 tracking-ls1 w-[100%]">{`Continue Reading`}</Button>
+                      </div>
+                    </Column>
+                  </List>
+                );
+              })}
+            </List>
           </List>
-          <Column className="items-start justify-start mb-[1122px] 3xl:mb-[1347px] lg:mb-[872px] xl:mb-[998px] lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] w-[32%]">
+          <Column className="items-start justify-start mb-[1032px] 3xl:mb-[1239px] lg:mb-[802px] xl:mb-[918px] lg:ml-[22px] xl:ml-[25px] ml-[29px] 3xl:ml-[34px] w-[24%]">
             <Column className="items-center pl-[1px] xl:pr-[1px] lg:pr-[1px] pr-[2px] w-[100%]">
               <Image
                 src={"images/img_rectangle10.png"}
@@ -262,7 +443,21 @@ const DashboardPage = () => {
             </Column>
           </Column>
         </Row>
-        <Stack className="font-publicsans lg:h-[334px] xl:h-[381px] h-[428.17993px] 2xl:h-[429px] 3xl:h-[515px] lg:mt-[36px] xl:mt-[41px] mt-[47px] 3xl:mt-[56px] mx-[auto] w-[77%]">
+        <Row className="font-publicsans items-start justify-center lg:mt-[38px] xl:mt-[44px] mt-[50px] 3xl:mt-[60px] mx-[auto] w-[15%]">
+          <Column className="bg-deep_purple_A200 lg:h-[32px] xl:h-[36px] h-[40px] 2xl:h-[41px] 3xl:h-[49px] items-center justify-start 3xl:pb-[10px] pb-[9px] pt-[10px] 3xl:pt-[12px] lg:px-[12px] xl:px-[14px] px-[16px] 3xl:px-[19px] lg:py-[7px] xl:py-[8px] rounded-radius501 lg:w-[31px] xl:w-[35px] w-[40px] 3xl:w-[48px]">
+            <Text className="font-normal mx-[auto] not-italic lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-left text-white_A700 w-[auto]">{`1`}</Text>
+          </Column>
+          <Column className="bg-white_A700 lg:h-[32px] xl:h-[36px] h-[40px] 2xl:h-[41px] 3xl:h-[49px] items-center justify-start lg:ml-[15px] xl:ml-[17px] ml-[20px] 3xl:ml-[24px] 3xl:pb-[10px] pb-[9px] lg:pl-[11px] xl:pl-[13px] pl-[15px] 3xl:pl-[18px] lg:pr-[10px] xl:pr-[12px] pr-[14px] 3xl:pr-[16px] pt-[10px] 3xl:pt-[12px] lg:py-[7px] xl:py-[8px] rounded-radius501 lg:w-[31px] xl:w-[35px] w-[40px] 3xl:w-[48px]">
+            <Text className="font-normal mx-[auto] not-italic lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-deep_purple_A200 text-left w-[auto]">{`2`}</Text>
+          </Column>
+          <Text className="font-light 3xl:mb-[10px] mb-[9px] lg:ml-[31px] xl:ml-[35px] ml-[40px] 3xl:ml-[48px] mt-[10px] 3xl:mt-[12px] lg:my-[7px] xl:my-[8px] lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-deep_purple_A200 text-left w-[auto]">{`Next`}</Text>
+          <Image
+            src={"images/img_arrowpointing.svg"}
+            className="lg:h-[13px] xl:h-[15px] h-[16px] 2xl:h-[17px] 3xl:h-[20px] lg:ml-[11px] xl:ml-[13px] ml-[15px] 3xl:ml-[18px] xl:my-[10px] my-[12px] 3xl:my-[14px] lg:my-[9px] object-contain lg:w-[12px] xl:w-[14px] w-[16px] 3xl:w-[19px]"
+            alt="arrowpointing"
+          />
+        </Row>
+        <Stack className="font-publicsans lg:h-[334px] xl:h-[381px] h-[428.18px] 2xl:h-[429px] 3xl:h-[515px] lg:mt-[36px] xl:mt-[41px] mt-[47px] 3xl:mt-[56px] mx-[auto] w-[77%]">
           <Row className="absolute bg-gray_901 bottom-[9%] inset-x-[0] items-center justify-evenly lg:pb-[63px] xl:pb-[72px] pb-[82px] 3xl:pb-[98px] lg:pt-[64px] xl:pt-[73px] pt-[83px] 3xl:pt-[99px] lg:px-[44px] xl:px-[50px] px-[57px] 3xl:px-[68px] rounded-radius5 top-[5%] w-[100%]">
             <Column className="items-start w-[45%]">
               <Text className="font-light font-publicsans lg:text-[14px] xl:text-[16px] text-[18px] 3xl:text-[21px] text-deep_purple_A200 text-left w-[auto]">{`NEWSLETTER`}</Text>
